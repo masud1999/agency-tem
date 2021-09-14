@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+</head>
+<body>
+<body class="hero-anime">	
+  {{>navbar}}
+
+
+  <div class="container">
+     <div class="container-regis"> 
+  <form action="/registration" method="POST">
+    <div class="row">
+      <div class="col-25">
+        <label class="lab2" for="firstname" >First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="firstname" name="firstname" placeholder="Your name.." required="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label class="lab2" for="lastname">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lastname" name="lastname" placeholder="Your last name.." required="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label class="lab2" for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Enter Your Email.." required="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label class="lab2" for="gender">Gender</label>
+      </div>
+      <div class="col-75">
+                  <select name="gender" id="state" class="form-control" >
+                    <option value="gender" disabled selected hidden>Choose Gender..</option>
+                    <option name="gender" value="male">Male</option>
+                    <option name="gender" value="femal">Femal</option>
+                    <option name="gender" value="other">Other</option>
+                </select>
+      </div>
+    </div>
+        <div class="row">
+      <div class="col-25">
+        <label class="lab2" for="phone">Phone</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="phone" name="phone" placeholder="Enter Your Phone.." required="">
+      </div>
+    </div>
+        <div class="row">
+      <div class="col-25">
+        <label class="lab2" for="password">Password</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="password" name="password" placeholder="Enter Your Password.." required="">
+      </div>
+    </div>
+        <div class="row">
+      <div class="col-25">
+        <label class="lab2" for="cpassword">Confirm Password</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="confirmpassword" name="confirmpassword" placeholder="enter Confirm Password.." required="">
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" name="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+
+
+               <!-- =================> This Is footer parth =======================> -->
+                          {{>footer}}
+    </body>
+</body>
+</html>
